@@ -1,3 +1,5 @@
+println("This is executed during the initialization phase.")
+
 pluginManagement {
     repositories {
         mavenCentral()
@@ -12,3 +14,4 @@ plugins {
 rootProject.name = "samDoesGradle"
 include(":basics:basicJava")
 include(":basics:basicKotlin")
+include(":basics:buildLifecycle")
