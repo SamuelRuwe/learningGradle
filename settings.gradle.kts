@@ -1,5 +1,6 @@
 println("This is executed during the initialization phase.")
 
+// Define the location of plugins
 pluginManagement {
     repositories {
         mavenCentral()
@@ -7,11 +8,22 @@ pluginManagement {
     }
 }
 
+// Apply plugins
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
 }
 
+// Can optionally define the location of components the project relies on
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+// Define rootProject name. Equivalent to settings.rootProject.name
 rootProject.name = "samDoesGradle"
+
 include(":basics:basicJava")
 include(":basics:basicKotlin")
 include(":basics:buildLifecycle")
