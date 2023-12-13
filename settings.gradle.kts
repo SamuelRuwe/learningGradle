@@ -20,7 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-
 // Define rootProject name. Equivalent to settings.rootProject.name
 rootProject.name = "samDoesGradle"
 
@@ -34,3 +33,5 @@ includeBuild("example-included-build")
 // this is an example of how to have an included build
 
 includeBuild("example-local-settings")
+
+includeBuild("plugins")
