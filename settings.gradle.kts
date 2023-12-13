@@ -27,6 +27,8 @@ rootProject.name = "samDoesGradle"
 include(":basics:basicJava")
 include(":basics:basicKotlin")
 include(":basics:buildLifecycle")
+include(":basics:tasks")
+include(":basics:writingTasks")
 
 includeBuild("example-included-build")
 // this is an example of how to have an included build
